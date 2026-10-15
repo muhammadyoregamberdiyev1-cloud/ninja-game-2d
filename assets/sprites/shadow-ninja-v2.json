@@ -1,0 +1,135 @@
+{
+  "image": "shadow-ninja-v2.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "columns": 9,
+  "rows": 5,
+  "frames": 45,
+  "background": "transparent",
+  "version": 2,
+  "animations": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fps": 7,
+      "loop": true
+    },
+    "run": {
+      "frames": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "fps": 14,
+      "loop": true
+    },
+    "jump": {
+      "frames": [
+        14,
+        15
+      ],
+      "fps": 9,
+      "loop": false
+    },
+    "doubleJump": {
+      "frames": [
+        16,
+        17,
+        18
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "fall": {
+      "frames": [
+        19,
+        20
+      ],
+      "fps": 6,
+      "loop": true
+    },
+    "wallSlide": {
+      "frames": [
+        21,
+        22
+      ],
+      "fps": 6,
+      "loop": true
+    },
+    "swordAttack": {
+      "frames": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "fps": 20,
+      "loop": false
+    },
+    "throw": {
+      "frames": [
+        28,
+        29,
+        30
+      ],
+      "fps": 13,
+      "loop": false
+    },
+    "dash": {
+      "frames": [
+        31,
+        32,
+        33
+      ],
+      "fps": 16,
+      "loop": true
+    },
+    "hurt": {
+      "frames": [
+        34,
+        35
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "land": {
+      "frames": [
+        36,
+        37
+      ],
+      "fps": 11,
+      "loop": false
+    },
+    "crouch": {
+      "frames": [
+        38,
+        39
+      ],
+      "fps": 5,
+      "loop": true
+    },
+    "death": {
+      "frames": [
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "fps": 8,
+      "loop": false
+    }
+  }
+}

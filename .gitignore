@@ -1,0 +1,16 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python tools
+__pycache__/
+*.py[cod]
+.venv/
+
+# Logs / temp
+*.log
+*.bak
+*.bak2
+tmp/
