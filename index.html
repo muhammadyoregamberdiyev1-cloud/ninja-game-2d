@@ -363,6 +363,10 @@ for (const k in ASSET_DATA) { const im = new Image(); im.src = ASSET_DATA[k]; IM
 function imgReady(im) { return im && im.complete && im.naturalWidth > 0; }
 /* Professional UI skins: every [data-ui] <img> gets its asset. */
 for (const el of document.querySelectorAll('[data-ui]')) el.src = ASSET_DATA[el.dataset.ui];
+/* Single-file favicon: reuse the embedded emblem, no external icon file needed. */
+const faviconLink = document.createElement('link');
+faviconLink.rel = 'icon'; faviconLink.type = 'image/png'; faviconLink.href = ASSET_DATA.uiEmblem;
+document.head.appendChild(faviconLink);
 
 
 /* ==================== SPRITE ANIMATION SYSTEM ====================
@@ -1777,11 +1781,6 @@ function loop(ts) {
   pressed.jump = pressed.attack = pressed.shuriken = pressed.dash = false;
 }
 requestAnimationFrame(loop);
-</script>
-<script>
-if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
-}
 </script>
 </body>
 </html>
